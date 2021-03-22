@@ -20,15 +20,14 @@ class Hangman extends Component {
         super(props)
         this.state = {
             mistakes: 0,
-            //guessed: new Set({}),
+            //guessed: new Set([]),
             answer: randomWord()
         }
     }
     render() {
         return (
-            <div>
-                <h1>Hangman</h1>
-                <p>{this.state.answer}</p>
+            <div className="Hangman container">
+                <h1 className="text-center">Hangman</h1>
             </div>
         )
     }
